@@ -9,4 +9,7 @@
 <p><%= @island.description %></p>
 </div>
 
-<%= link_to "back", islands_path, class: 'btn btn-primary' %>
+<div class="d-flex justify-content-between">
+  <%= link_to "back", islands_path, class: 'btn btn-primary' %>
+  <%= link_to "see all your bookings", island_bookings_path, class: 'btn btn-primary' %>
+</div>
