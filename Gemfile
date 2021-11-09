@@ -25,6 +25,9 @@ gem 'devise'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# gem cloudinary for image upload
+gem 'cloudinary', '~> 1.16.0'
+
 # gem dotenv for security
 gem 'dotenv-rails', groups: [:development, :test]
 
