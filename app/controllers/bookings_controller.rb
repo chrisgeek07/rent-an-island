@@ -1,4 +1,6 @@
 class BookingsController < ApplicationController
+  before_action :set_island, only: [:new, :create]
+
   def index
     @bookings = Booking.all
   end
@@ -14,10 +16,15 @@ class BookingsController < ApplicationController
       redirect_to islands_path(@island)
     else
       render :new
-    end  
+    end
   end
 
   def show
   end
 
+  private
+
+  def set_island
+    @island = Island.find(params[:island_id])
+  end
 end
