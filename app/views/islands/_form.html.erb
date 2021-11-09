@@ -1,0 +1,7 @@
+<%= simple_form_for (@island) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description, as: :text%>
+  <%= f.input :price %>
+  <%= f.button :submit, class: 'btn btn-outline-primary'%>
+  <%= link_to 'Cancel', islands_path, class: 'btn btn-danger'%>
+<% end %>
