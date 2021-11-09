@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :set_island, only: [:new, :create]
+  before_action :set_island, only: [:new, :show, :create]
 
   def index
     @bookings = Booking.all
@@ -12,15 +12,12 @@ class BookingsController < ApplicationController
   def create
     @bookings = Booking.new(booking_params)
     @booking.island = @island
-    if @booking.save
-      redirect_to islands_path(@island)
-    else
-      render :new
-    end
+    @booking.save
   end
 
-  def show
-  end
+  #def show
+  #  @bookings = Booking.all
+  #end
 
   private
 
