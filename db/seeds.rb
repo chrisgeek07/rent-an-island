@@ -9,7 +9,7 @@ puts "Creating New islands..."
 
 Island.create(
   name: "Kauai"
-  description: "Kauai is an island in the Central Pacific, part of the Hawaiian archipelago. It's nicknamed "the Garden Isle" thanks to the tropical rainforest covering much of its surface."
+  description: "Kauai is an island in the Central Pacific, part of the Hawaiian archipelago. It's nicknamed 'the Garden Isle' thanks to the tropical rainforest covering much of its surface."
   price: 1099
 )
 
