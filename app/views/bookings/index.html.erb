@@ -1,0 +1,7 @@
+<h1> registration <h1>
+<%= simple_form_for [@island, @booking] do |f| %>
+  <%= f.input :name, :label => 'Name:', :placeholder => 'Enter your name' %>
+  <%= f.input :email, :label => 'Email:', :placeholder => 'user@domain.com'%>
+  <%= f.input :date_of_birth, :as => :date, :start_year => Date.today.year - 90,
+	                            :end_year => Date.today.year, :order => [:month, :day, :year],
+<% end %>
