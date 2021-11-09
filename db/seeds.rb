@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Creating New islands..."
 
 Island.create(
   name: "Kauai"
@@ -29,3 +30,5 @@ Island.create(
     description: "Tahiti is the largest island in French Polynesia, the South Pacific archipelago. Shaped like a figure-8, it's divided into Tahiti Nui (the larger, western section) and Tahiti Iti (the eastern peninsula)."
     price: 1499
 )
+
+puts "All islands have been created successfully.."
