@@ -2,15 +2,21 @@
   background: #F4F4F4;
   display: flex;
   align-items: center;
+  margin-top: 245px;
   justify-content: space-between;
-  height: 100px;
-  padding: 0px 50px;
+  font-size: 1rem;
+  height: 50px;
   color: rgba(0,0,0,0.3);
+  position: sticky;
+  margin-bottom: 0%;
+  padding: 0 50px;
 }
+
 .footer-links {
   display: flex;
   align-items: center;
 }
+
 .footer-links a {
   color: black;
   opacity: 0.15;
@@ -20,7 +26,4 @@
 }
 .footer-links a:hover {
   opacity: 1;
-}
-.footer .fa-heart {
-  color: #D23333;
 }
