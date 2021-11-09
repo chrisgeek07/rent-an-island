@@ -1,8 +1,9 @@
 <h1>Book an island<h1>
+<p> <%= current_user.name %></p>
 <%= simple_form_for [@island, @booking] do |f| %>
-  <%= f.input :name, :label => 'Name:', :placeholder => 'Enter your name' %>
-  <%= f.input :email, :label => 'Email:', :placeholder => 'user@domain.com'%>
   <%= f.input :start_date, as: :date, html5: true %>
+  <%= f.input :end_date, as: :date, html5: true %> 
   <%= f.submit 'Book', class: "btn btn-default btn-primary" %>
 <% end %>
-<%= link_to "back", island_booking_path(@island), class: 'btn btn-primary' %>
+
+<%= link_to "back", new_island_booking_path, class: 'btn btn-primary' %>
