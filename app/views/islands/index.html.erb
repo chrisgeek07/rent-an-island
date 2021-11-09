@@ -7,8 +7,8 @@
   <div class="row">
     <% @islands.each do |island| %>
       <div class="col-12 col-sm-6 col-md-4 mb-4">
-        <% if island.photo.attached? %>
-          <%= link_to island_path(island), class: 'text-decoration-none' do %>
+        <%= link_to island_path(island), class: 'text-decoration-none' do %>
+          <% if island.photo.attached? %>
               <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path island.photo.key, height: 300, crop: :fill %>')">
                 <%= island.name %>
 
@@ -19,6 +19,7 @@
                 </div>
 
               </div>
+              
               <% else %>
               <div class="card-category" style="background-image: linear-gradient(rgba(20,20,20,0.3))">
                 <%= island.name%>
