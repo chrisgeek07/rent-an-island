@@ -10,7 +10,7 @@ class IslandsController < ApplicationController
   def create
     @island = Island.new(island_params)
     if @island.save
-      redirect_to islands_path(@island)
+      redirect_to islands_path
     else
       render :new
     end

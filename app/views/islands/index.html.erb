@@ -5,7 +5,7 @@
   </div>
 
   <div class="row">
-    <% @islands.each |island| do%>
+    <% @islands.each do |island| %>
       <div class="col-12 col-sm-6 col-md-4 mb-4">
         <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
           <%= island.name %>
