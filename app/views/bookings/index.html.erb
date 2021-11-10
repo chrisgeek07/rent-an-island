@@ -1,5 +1,5 @@
 <div class="container mt-2">
-  <h1> All Bookings <h1>
+  <h1> All Bookings </h1>
 
   <% @bookings.each do |booking| %>
   <div class="container mt-4">
@@ -14,4 +14,7 @@
     </div>
     </div>
   <%end%>
+  <div class="m-4">
+  <%= link_to "Back", islands_path, class: 'btn btn-primary btn-lg' %>
+  </div>
 </div>
