@@ -1,3 +1,13 @@
 <h1> All Bookings <h1>
-
-
+<div class="card-product-container">
+<% @bookings.each do |booking| %>
+<div class="card-product">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <div class="card-product-infos">
+    <h2><%= booking.island.name%></h2>
+    <p><strong>Check in  <%= booking.start_date %></strong></p>
+    <p><strong>Check out <%= booking.end_date %></strong></p>
+  </div>
+</div>
+<%end%>
+</div>

@@ -1,18 +1,17 @@
-<h1><%= @island.name %></h1>
+<h3><%= @island.name %></h3>
 
 <div class="card-product">
   <img src="" />
     <div class="card-product-infos">
       <p>
-        <strong>Price: </strong> $<%= @island.price %><br />
+        <strong>Price per day: </strong> $<%= @island.price %><br />
         <strong>Start date: </strong> <%= @booking.start_date.to_s %><br />
         <strong>End date: </strong> <%= @booking.end_date.to_s %><br />
-        <strong>Island description</steong><%= @island.description %></p>
+        <strong>Island description: </strong><%= @island.description %></p>
     </div>
 </div>
 
-<%= link_to "back", islands_path, class: 'btn btn-primary' %>
-<%= link_to "see all your bookings", island_bookings_path, class: 'btn btn-primary' %>
-
-
-
+<div class="d-flex justify-content-between">
+  <%= link_to "back", islands_path, class: 'btn btn-primary' %>
+  <%= link_to "see all your bookings", island_bookings_path, class: 'btn btn-primary' %>
+</div>
