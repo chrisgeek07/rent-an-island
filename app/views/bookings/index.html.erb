@@ -3,9 +3,9 @@
 
   <% @bookings.each do |booking| %>
   <div class="container mt-4">
-    <div class="card-product">
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-      <div class="card-product-infos">
+    <div class="card-product-show">
+      <img src="" />
+      <div class="card-product-show-infos">
         <h2><%= booking.island.name%></h2>
         <p><strong>Total price: </strong> $ <%= ((booking.end_date - booking.start_date).to_i)*booking.island.price %><p>
         <p><strong>Check in:  <%= booking.start_date %></strong></p>
