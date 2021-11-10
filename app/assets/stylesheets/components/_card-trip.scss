@@ -6,9 +6,10 @@
   }
   
   .card-trip > img {
-    height: 80%;
+    height: 400px;
     width: 100%;
     object-fit: cover;
+    object-position: center;
   }
   
   .card-trip h2 {
@@ -27,7 +28,7 @@
   
   
   .card-trip .card-trip-infos {
-    padding: 10px 16px;
+    padding: 15px 16px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -41,5 +42,5 @@
     width: 40px;
   }
   .card-trip .book {
-    padding: 10px 16px;
+    padding: 15px 16px;
   }
