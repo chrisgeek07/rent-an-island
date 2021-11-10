@@ -3,11 +3,11 @@
 
 <div class="card-product-show">
   <img src="" />
-    <div class="card-product-show-infos">      
+    <div class="card-product-show-infos">
         <p><strong>Price per day: </strong> $<%= @island.price %></p>
-        <p><strong>Start date: </strong> <%= @booking.start_date.to_s %></p>
-        <p><strong>End date: </strong> <%= @booking.end_date.to_s %></p>
-        <p><strong>Total price: </strong></p>
+        <p><strong>Check in: </strong> <%= @booking.start_date.to_s %></p>
+        <p><strong>Check out: </strong> <%= @booking.end_date.to_s %></p>
+        <p><strong>Total price: </strong> $<%= ((@booking.end_date - @booking.start_date).to_i)*@island.price %> </p>
         <p><strong>Island description: </strong><%= @island.description %></p>
     </div>
 </div>
