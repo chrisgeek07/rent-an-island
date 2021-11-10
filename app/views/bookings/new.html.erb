@@ -3,7 +3,7 @@
     <div class="col-12 col-md-6 col-sm-6">
       <p> <%= current_user.name %></p>
       <%= simple_form_for [@island, @booking] do |f| %>
-       <h1>Book <%= @island.name %><h1>
+       <h1>Book <%= @island.name %> island<h1>
         <%= f.input :start_date, as: :date, html5: true %>
         <%= f.input :end_date, as: :date, html5: true %> 
         <%= f.submit 'Book', class: "btn btn-default btn-primary btn-lg"  %>
