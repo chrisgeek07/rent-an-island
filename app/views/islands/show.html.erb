@@ -1,7 +1,7 @@
 <div class="container py-5">
-  <h1 class="mb-4 text-left"> <%= @island.name %> </h1>
   <div class="row justify-content-center">
     <div class="col-12 col-md-6 col-sm-6 col-lg-9">
+     <h1 class="mb-4"> <%= @island.name %> </h1>
         <div class="card-trip">
           <%= cl_image_tag @island.photo.key, height: 300, crop: :fill %>
             <div class="card-trip-infos">
