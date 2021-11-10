@@ -74,14 +74,14 @@ Borabora = Island.create(
 
 Borabora.photo.attach(io: file6, filename: 'bora_t7emdo.jpg', content_type: 'image/jpg')
 
-james-bond-island = Island.create(
+James = Island.create(
     user_id: 1,
     name: "James Bond Island",
     description: "Khao Phing Kan or Ko Khao Phing Kan is an island in Thailand, in Phang Nga Bay northeast of Phuket. About 40 metres from the shores of Khao Phing Kan lies a 20-metre tall islet called Ko Ta Pu or Ko Tapu.",
     price: 1299
 )
 
-james-bond-island.photo.attach(io: file7, filename: 'james_e9kmh3', content_type: 'image/jpg')
+James.photo.attach(io: file7, filename: 'james_e9kmh3.jpg', content_type: 'image/jpg')
 
 Kythnos = Island.create(
     user_id: 1,
@@ -90,7 +90,7 @@ Kythnos = Island.create(
     price: 699
 )
 
-Kythnos.photo.attach(io: file8, filename: 'kythnos_t1hq6v', content_type: 'image/jpg')
+Kythnos.photo.attach(io: file8, filename: 'kythnos_t1hq6v.jpg', content_type: 'image/jpg')
 
 Palau = Island.create(
     user_id: 1,
@@ -99,6 +99,6 @@ Palau = Island.create(
     price: 899
 )
 
-Palau.photo.attach(io: file9, filename: 'palau_j6jpp7', content_type: 'image/jpg')
+Palau.photo.attach(io: file9, filename: 'palau_j6jpp7.jpg', content_type: 'image/jpg')
 
 puts "All islands have been created successfully.."
