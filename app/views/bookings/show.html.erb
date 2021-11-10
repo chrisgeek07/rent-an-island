@@ -2,7 +2,7 @@
 <h3><%= @island.name %></h3>
 
 <div class="card-product-show">
-  <img src="" />
+  <%= cl_image_tag @island.photo.key, height: 300, crop: :fill %>
     <div class="card-product-show-infos">
         <p><strong>Price per day: </strong> $<%= @island.price %></p>
         <p><strong>Check in: </strong> <%= @booking.start_date.to_s %></p>
