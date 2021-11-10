@@ -10,7 +10,7 @@
                 <p> <%= @island.description %></p>
               </div>
           <h2 class="card-trip-pricing"> $<%= @island.price %> </h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/chrisgeek07" class="card-trip-user avatar-bordered" />
+          <%= image_tag "user.svg", class:"card-trip-user avatar-bordered bg-color" %>
           </div>
             <div class="book">
                 <%= link_to "Book Now",  new_island_booking_path(@island), class: 'btn btn-primary btn-md btn-block' %>
