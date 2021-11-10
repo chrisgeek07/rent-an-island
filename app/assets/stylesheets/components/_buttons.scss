@@ -21,8 +21,28 @@
   }
 
   .btn-cta {
-    background: #CE8D4D;
+    background: $red;
     font-weight: bold;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  .btn-blue {
+    background: $blue;
+    font-weight: bold;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  .btn-blue:hover {
+    transform: scale(0.8);
+    color: #ffffff;
+  }
+
+  .btn-light-blue {
+    background: $light-blue;
+    font-weight: bold;
+    color: #ffffff;
     transition: all 0.3s ease;
   }
 
