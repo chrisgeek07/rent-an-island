@@ -7,7 +7,7 @@
         <p><strong>Price per day: </strong> $<%= @island.price %></p>
         <p><strong>Check in: </strong> <%= @booking.start_date.to_s %></p>
         <p><strong>Check out: </strong> <%= @booking.end_date.to_s %></p>
-        <p><strong>Total: </strong> <b>$<%= ((@booking.end_date - @booking.start_date).to_i)*@island.price %></b></p>
+        <p><strong>Total: </strong> $<%= ((@booking.end_date - @booking.start_date).to_i)*@island.price %></p>
         <p><strong>Island description: </strong><%= @island.description %></p>
     </div>
 </div>
