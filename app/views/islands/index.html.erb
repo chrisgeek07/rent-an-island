@@ -1,7 +1,18 @@
 <div class="container py-5">
   <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1>Our beautiful islands</h1>
-        <%= link_to "Create new Island", new_island_path, class: 'btn btn-blue btn-lg ' %>
+    <h1>Our beautiful islands</h1>
+      
+      <div class="mr-2 d-flex align-items-center">
+        <%= form_tag islands_path, class:"d-flex justify-content-between mr-2", method: :get do %>
+          <%= text_field_tag :query,
+            params[:query],
+            class: "form-control",
+            placeholder: "Find an island"
+          %>
+          <%= submit_tag "Search", class: "btn btn-primary ml-1 mr-2" %>
+        <% end %>
+      <%= link_to "Create new Island", new_island_path, class: 'btn btn-blue ' %>
+      </div>
   </div>
 
   <div class="row">
