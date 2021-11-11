@@ -4,7 +4,7 @@
 <div class="card-product">
   <%= cl_image_tag @booking.island.photo.key, crop: :fill %>
     <div class="card-product-infos">
-        <p><strong>Price per day: </strong> $<%= @island.price %></p>
+        <p><strong>Price per day: </strong> <b>$</b> <%= @island.price %></p>
         <p><strong>Check in: </strong> <%= @booking.start_date.to_s %></p>
         <p><strong>Check out: </strong> <%= @booking.end_date.to_s %></p>
         <p><strong>Total price: </strong> $<%= ((@booking.end_date - @booking.start_date).to_i)*@island.price %> </p>

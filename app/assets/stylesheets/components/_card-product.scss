@@ -23,7 +23,7 @@
   .card-product p {
     font-size: 12px;
     line-height: 1.4;
-    opacity: .7;
+    opacity: 1;
     margin-bottom: 0;
     margin-top: 8px;
   }
@@ -32,5 +32,9 @@
     padding: 30px 30px;
   }
   
-  
+  .card-product strong {
+    font-size: 16px;
+    opacity: $gray;
+
+  }
  
