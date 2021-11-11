@@ -28,6 +28,9 @@ gem 'devise'
 # gem cloudinary for image upload
 gem 'cloudinary', '~> 1.16.0'
 
+# gem geocoder
+gem 'geocoder'
+
 # gem dotenv for security
 gem 'dotenv-rails', groups: [:development, :test]
 
