@@ -1,0 +1,8 @@
+
+<div class="card">
+  <img src="<%= cl_image_path island.photo.key, height: 300, crop: :fill %>" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"> <%= island.name %> </h5>
+    <p class="card-text"> $ <%= island.price %> / Day</p>
+  </div>
+</div>

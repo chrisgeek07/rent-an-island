@@ -1,22 +1,20 @@
 class IslandsController < ApplicationController
   def index
-
     @islands = Island.all
-
     @markers = @islands.geocoded.map do |island|
       {
         lat: island.latitude,
-        lng: island.longitude
+        lng: island.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { island: island }),
+        image_url: helpers.asset_url("marker.png")
       }
     end
-    
     if params[:query].present?
       sql_query = "name ILIKE :query OR description ILIKE :query"
       @islands = Island.where(sql_query, query: "%#{params[:query]}%")
     else
       @islands = Island.all
     end
-    
   end
 
   def new
