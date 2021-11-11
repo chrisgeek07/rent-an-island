@@ -1,0 +1,33 @@
+.card-all-bookings {
+    overflow: hidden;
+    height: 200px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .card-all-bookings img {
+    height: 100%;
+    width: 300px;
+    object-fit: cover;
+  }
+
+  .card-all-bookings h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .card-all-bookings p {
+    font-size: 20px;
+    line-height: 1.4;
+    opacity: .7;
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+
+  .card-all-bookings-details {
+    padding-left: 30px;
+  }
