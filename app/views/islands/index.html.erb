@@ -15,6 +15,7 @@
       </div>
   </div>
 
+  <%# ---------------- Main container start ---------------- %>
   <div class="main-container">
     
     <%# ---------------- All islands cards start ---------------- %>
@@ -39,8 +40,16 @@
       <% end %>
     </div>
     <%# ---------------- All islands cards end ---------------- %>
+    
+    <%# ---------------- Mapbox start ---------------- %>
+    <div id="map"
+     style="width: 100%; height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+    <%# ---------------- Mapbox start ---------------- %>
 
   </div>
+  <%# ---------------- Main container end ---------------- %>
 
 
 </div>
