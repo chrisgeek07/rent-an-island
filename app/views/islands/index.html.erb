@@ -16,12 +16,12 @@
   </div>
 
   <%# ---------------- Main container start ---------------- %>
-  <div class="main-container">
+  <div class="main-container d-flex ">
     
     <%# ---------------- All islands cards start ---------------- %>
     <div class="row">
       <% @islands.each do |island| %>
-        <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-6 mb-4">
           <%= link_to island_path(island), class: 'text-decoration-none' do %>
             <% if island.photo.attached? %>
                 <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path island.photo.key, height: 300, crop: :fill %>')">
@@ -43,7 +43,7 @@
     
     <%# ---------------- Mapbox start ---------------- %>
     <div id="map"
-     style="width: 100%; height: 600px;"
+     style="width: 50%; height: 1000px;"
      data-markers="<%= @markers.to_json %>"
      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
     <%# ---------------- Mapbox start ---------------- %>
