@@ -2,6 +2,7 @@ class BookingsController < ApplicationController
   before_action :set_booking, only: [:index, :new, :show, :create]
 
   def index
+    @island = Island.find(params[:island_id])
     @bookings = Booking.where(user_id: current_user.id)
   end
 
