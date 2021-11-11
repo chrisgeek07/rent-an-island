@@ -1,6 +1,6 @@
 <div class="container py-5">
   <div class="row justify-content-center">
-    <div class="col-12 col-md-6 col-sm-6 col-lg-9">
+    <div class="col-12 col-md-6 col-sm-6 col-lg-6">
      <h1 class="mb-4"> <%= @island.name %> </h1>
         <div class="card-trip">
           <%= cl_image_tag @island.photo.key, height: 300, crop: :fill %>
@@ -12,8 +12,9 @@
           <h2 class="card-trip-pricing"> $<%= @island.price %> </h2>
           <%= image_tag "user.svg", class:"card-trip-user avatar-bordered bg-color" %>
           </div>
-            <div class="book">
-                <%= link_to "Book Now",  new_island_booking_path(@island), class: 'btn btn-primary btn-md btn-block' %>
+            <div class="book d-flex">
+                <%= link_to "Book Now",  new_island_booking_path(@island), class: 'btn btn-cta2 text-white btn-md w-100 mr-2' %>
+                <%= link_to "Cancel",  islands_path, class: 'btn btn-outline-danger btn-md w-100' %>
             </div>
         </div>
     </div>

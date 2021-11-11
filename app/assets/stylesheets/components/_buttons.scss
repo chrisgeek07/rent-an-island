@@ -27,6 +27,17 @@
     transition: all 0.3s ease;
   }
 
+  .btn-cta2 {
+    background: $red;
+    font-weight: bold;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  .btn-cta2:hover {
+    transform: scale(0.9);
+  }
+
   .btn-blue {
     background: $blue;
     font-weight: bold;
