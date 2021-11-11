@@ -5,8 +5,8 @@ class IslandsController < ApplicationController
       {
         lat: island.latitude,
         lng: island.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { island: island })
-        image_url: helpers.asset_url('marker')
+        info_window: render_to_string(partial: "info_window", locals: { island: island }),
+        image_url: helpers.asset_url("marker.png")
       }
     end
     if params[:query].present?
