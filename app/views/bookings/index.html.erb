@@ -7,10 +7,10 @@
       <%= cl_image_tag booking.island.photo.key, height: 300, crop: :fill %>
       <div class="card-all-bookings-details">
         <h2><%= booking.island.name%></h2>
-        <p><strong>Check in: </strong> <%= booking.start_date %></p>
-        <p><strong>Check out: </strong> <%= booking.end_date %></p>
-        <p><strong>Booked for: </strong><%= ((booking.end_date - booking.start_date).to_i)%> days<p>
-        <p><strong>Total price: </strong> $ <%= ((booking.end_date - booking.start_date).to_i)*booking.island.price %><p>
+        <p><span>Check in: </span> <%= booking.start_date %></p>
+        <p><span>Check out: </span> <%= booking.end_date %></p>
+        <p><span>Booked for: </span><%= ((booking.end_date - booking.start_date).to_i)%> days<p>
+        <p><span>Total price: </span>$ <%= ((booking.end_date - booking.start_date).to_i)*booking.island.price %><p>
       </div>
     </div>
     </div>
