@@ -1,20 +1,21 @@
-<div class="container mt-2">
+<div class="container mt-4">
   <h1> All Bookings </h1>
 
   <% @bookings.each do |booking| %>
-  <div class="container mt-4">
-    <div class="card-product">
+  <div class="container mt-4 pl-0 pr-0">
+    <div class="card-all-bookings">
       <%= cl_image_tag booking.island.photo.key, height: 300, crop: :fill %>
-      <div class="card-product-infos">
+      <div class="card-all-bookings-details">
         <h2><%= booking.island.name%></h2>
-        <p><strong>Total price: </strong> $ <%= ((booking.end_date - booking.start_date).to_i)*booking.island.price %><p>
         <p><strong>Check in: </strong> <%= booking.start_date %></p>
         <p><strong>Check out: </strong> <%= booking.end_date %></p>
+        <p><strong>Booked for: </strong><%= ((booking.end_date - booking.start_date).to_i)%> days<p>
+        <p><strong>Total price: </strong> $ <%= ((booking.end_date - booking.start_date).to_i)*booking.island.price %><p>
       </div>
     </div>
     </div>
   <%end%>
-  <div class="m-4">
-  <%= link_to "Back", islands_path, class: 'btn btn-primary btn-lg' %>
+  <div class="mt-4">
+  <%= link_to "Back", islands_path, class: 'btn btn-primary btn-lg btn-custom' %>
   </div>
 </div>
