@@ -23,11 +23,17 @@
   .card-all-bookings p {
     font-size: 20px;
     line-height: 1.4;
-    opacity: .7;
+    color: #7e7e7e;
     margin-bottom: 0;
     margin-top: 8px;
   }
 
   .card-all-bookings-details {
     padding-left: 30px;
+  }
+
+  .card-all-bookings-details span{
+    opacity: 1;
+    color: $gray;
+    font-weight: bold;
   }
