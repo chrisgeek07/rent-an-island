@@ -1,6 +1,16 @@
 #map {
  border-radius: 10px;
  top: 0;
+ width: 400px !important;
+}
+
+.cards-max {
+  max-width: 700px;
+}
+
+.mapboxgl-canvas {
+  width: 400px !important;
+  flex-shrink: 0;
 }
 
 .mapboxgl-popup {
