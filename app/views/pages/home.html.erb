@@ -11,7 +11,8 @@
     <h1 class="content mb-4">About Us</h1>
     <div class="row">
         <div class="col-md-12 d-flex">
-            <img style='width:500px;height:300px; margin-right:25px;' src="https://www.collinsdictionary.com/images/full/island_526092568_1000.jpg" />
+            <%= cl_image_tag("lkpxdqjmjysmb5pvarly",
+               width: 500, height: 300, crop: :fill) %>
             <div class ="content p-5">
              <p>We’re excited to welcome you to our beautiful islands!
               Come and relax on our stunning beaches and feel the freedom to explore.</p>
