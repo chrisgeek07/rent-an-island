@@ -11,7 +11,10 @@
           %>
           <%= submit_tag "Search", class: "btn btn-primary ml-1 mr-2" %>
         <% end %>
-      <%= link_to "Create new Island", new_island_path, class: 'btn btn-blue ' %>
+
+        <% if current_user.owner == true %>
+          <%= link_to "Create new Island", new_island_path, class: 'btn btn-blue ' %>
+        <% end %>
       </div>
   </div>
 
