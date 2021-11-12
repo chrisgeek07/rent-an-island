@@ -43,7 +43,7 @@ class IslandsController < ApplicationController
   def update
     @island = Island.find(params[:id])
     @island.update(island_params)
-    redirect_to islands_path
+    redirect_to island_path(@island)
   end
 
   def destroy
